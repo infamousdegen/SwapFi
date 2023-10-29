@@ -79,7 +79,7 @@ const Swap: React.FC = () => {
 
   const { config: addLiquidityConfig, error: addLiquidityError } =
     usePrepareContractWrite({
-      address: "0xE72F49482Bec79A6b16d5727A51D97EdCe2E7Ba9",
+      address: "0xC347D1c5e7ee89DEf7501aAe1E8651F35A6BAf7E",
       abi: uniswapv2Router.abi,
       functionName: "addLiquidity",
       chainId: 51,

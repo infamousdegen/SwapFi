@@ -62,7 +62,7 @@ const Swap: React.FC = () => {
     setShowSettingsDropdown(false);
   };
   const {config:swapConfig,error:swapError} = usePrepareContractWrite({
-    address: '0xE72F49482Bec79A6b16d5727A51D97EdCe2E7Ba9',
+    address: '0xC347D1c5e7ee89DEf7501aAe1E8651F35A6BAf7E',
     abi: uniswapv2Router.abi,
     functionName: 'swapExactTokensForTokens',
     chainId: 51,
@@ -85,7 +85,7 @@ const Swap: React.FC = () => {
   //get reserves from the pair 
 
   const{data:reservesData,isError:reservesError,isLoading:reservesLoading} = useContractRead({
-    address:'0xCC87c4291fcd59788CE565968068714D4bEfb057',
+    address:'0x768e88C9196677c26FcCF93BC1CB7b16a8c428b8',
     abi:UniswapV2Pair.abi,
     functionName:'getReserves'
   })
@@ -104,7 +104,7 @@ useEffect(()=>{
 
 
 const{data:quoteData,isError:quoteError,isLoading:quoteLoading} = useContractRead({
-  address:'0xE72F49482Bec79A6b16d5727A51D97EdCe2E7Ba9',
+  address:'0xC347D1c5e7ee89DEf7501aAe1E8651F35A6BAf7E',
   abi:uniswapv2Router.abi,
   functionName:'quote',
   args:[payValueS,reserveData[0],reserveData[1]]
