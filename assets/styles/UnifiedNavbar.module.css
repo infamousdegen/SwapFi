@@ -1,0 +1,149 @@
+/* Navbar.module.css */
+
+.navbar {
+  display: flex;    
+  padding: 14px;
+  color: white;
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.144); /* Adjust the alpha value (0.5 in this example) for your desired level of transparency */
+  margin: 0.9rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.logo {
+  flex: 1;
+  max-width: 400px; 
+  max-height: 400px;
+}
+
+.links {
+  flex: 5; 
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  width: 70%;
+}
+
+.links li {
+  margin-right: 20px;
+  font-weight: 500;
+  font-style: initial;
+  padding-right: 10px;
+  width: 80px;
+  margin: 1 auto;
+}
+
+.links li a {
+  transition: 0.3s; 
+  color: rgb(234, 234, 234); 
+  padding: 7px; 
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px; 
+  text-decoration: none;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.links li a:hover {
+  background-color: rgba(39, 63, 157, 0.07);
+  border-radius: 10px;
+  color: #ffffff;
+  box-shadow: -2px 0px 10px -5px rgba(183,74,221,1);
+  -webkit-box-shadow: -2px 0px 32px -2px rgba(182, 74, 221, 0.633);
+  -moz-box-shadow: -2px 0px 32px -2px rgba(183,74,221,1);
+  transition: all 0.5s ease; 
+}
+
+
+.links1 {
+  flex: 5.5;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  width: 70%;
+}
+
+.links1 li {
+  margin-right: 20px;
+  font-weight: 500;
+  font-style: initial;
+  padding-right: 10px;
+  width: 80px;
+  margin: 1 auto;
+}
+
+.links1 li a {
+  transition: 0.3s; 
+  color: rgb(178, 178, 178); 
+  padding: 7px; 
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px; 
+  text-decoration: none;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.links1 li a:hover {
+  background-color: rgba(39, 63, 157, 0.07);
+  border-radius: 10px;
+  color: #ffffff;
+  box-shadow: -2px 0px 10px -5px rgba(182, 74, 221, 0.563);
+  -webkit-box-shadow: -2px 0px 32px -2px rgba(182, 74, 221, 0.633);
+  -moz-box-shadow: -2px 0px 32px -2px rgba(183,74,221,1);
+  transition: all 0.5s ease; 
+}
+
+
+.button {
+  flex: -2.5;
+  text-align: right;
+  float: right;
+  align-self:auto;
+  
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .links {
+    justify-content: center;
+  }
+
+  .button {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+.activeLink {
+  color: rgba(var(--text-color));
+  border: 2px double transparent;
+  background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  text-align: center;
+  width: 70px;
+  padding: 15px; 
+  border-radius: 10px;
+  color: white !important;
+}
+.activeLink:hover {
+  box-shadow: rgba(white, 2) 0px 0px 20px 0px;
+}
