@@ -293,25 +293,6 @@ const Swap: React.FC = () => {
               </div>
             </div>
 
-            <div>
-              <div className={styles.txtarea}>
-                <p>Prices and pool share</p>
-                <div className={styles.boxContainer}>
-                  <div className={styles.box}>
-                    <p className={styles.boxTextTop}>6210.39</p>
-                    <p className={styles.boxTextBottom}>1INCH per ETH</p>
-                  </div>
-                  <div className={styles.box}>
-                    <p className={styles.boxTextTop}>0.00016102</p>
-                    <p className={styles.boxTextBottom}>ETH per 1INCH</p>
-                  </div>
-                  <div className={styles.box}>
-                    <p className={styles.boxTextTop}>2.68%</p>
-                    <p className={styles.boxTextBottom}>Share of pool</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           <div>
             <br></br>
