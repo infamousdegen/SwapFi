@@ -1,21 +1,16 @@
 // pages/index.js
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
-import React from "react";
-import Pools from "../components/Pools";
-import Swap from "../components/Swap";
-import Tokens from "../components/Tokens";
-import UnifiedNavbar from "../components/UnifiedNavbar";
-import Indexpage from "../components/Indexpage";
+function Home() {
+  const router = useRouter();
 
-const MyApp = () => {
-  return (
-    <div>
-      <Swap />
-      <Tokens />
-      <Pools />
-      <Indexpage/>
-    </div>
-  );
-};
+  useEffect(() => {
+    // Redirect to the landing page
+    router.push('/_app.html');
+  }, []);
 
-export default MyApp;
+  return null;
+}
+
+export default Home;
